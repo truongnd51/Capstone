@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScollView.HDSD">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/weather_background"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="70dp"
+            android:paddingTop="14dp"
+            android:text="HƯỚNG DẪN SỬ DỤNG"
+            android:textColor="@color/white"
+            android:textSize="27dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/HDSD_ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hướng dẫn trông cây"
+                android:textColor="@color/green"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="☆ Bước 1: Chuẩn bị nguyên liệu:
+\n- Hạt giống: Có rất nhiều loại rau thích hợp cho bạn lựa chọn trồng lấy rau mầm như giá đỗ, rau mầm hướng dương , củ cải trắng, cải ngọt, cải xanh, rau muống, rau dền… \n- Các loại hạt giống rau mầm đều có bán sẵn tại các cửa hàng giống cây trồng trên cả nước. \n- Nên chọn hạt giống chuyên để trồng rau mầm có nguồn gốc rõ ràng, hạt mẩy, đồng đều.
+\n- Chuẩn bị giá thể trồng mầm, khuyến khích sử dụng xơ dừa vụn. Vì đây là môi trường tốt cho cây đâm rễ.
+
+\n☆ Bước 2: Ngâm hạt giống:
+\n- Do vỏ hạt rau mầm khá cứng nên thường phải ngâm nước trước để giúp vỏ mau nứt. \n- Ngâm hạt giống trong nước ấm khoảng 55 độ C ( 2 sôi 3 lạnh) trong 5-6 tiếng. \n- Sau khi đã ngâm xong, rửa sạch hạt giống qua nước rồi để ráo trong rổ 5-8h, đặt rổ nơi thoáng mát và tối. \n- Trong quá trình để ráo bạn nên xốc hạt để hạt khô ráo đều.
+
+\n☆ Bước 3: Gieo hạt mầm:
+\n- Nên rải hạt kín khay đất để khi lên mầm không đổ rạp.
+\n- Nếu hơn 1 lớp, khi ra rễ, nhiều rễ mầm không chạm giá thể và chết.
+\n- Mầm rất dễ bị các loại chim, chuột khác tấn công.
+\n- Sau 2-3 ngày gieo hạt, hạt đã nảy mầm đều cần mang khay rau mầm ra chỗ sáng.
+\n- Tưới nước mỗi ngày bằng bình phun sương, tưới đều bề mặt khay.
+
+\n☆ Bước 4: Thu hoạch và bảo quản rau mầm:
+\n- Tùy từng loại giống mà có ngày thu hoạch khác nhau nhưng thông thường chỉ từ 5-7 ngày là có thể cắt rau ăn được.
+\n- Dùng kéo hoặc dao sạch cắt sát bề mặt giá thể, không rửa, xếp ngay ngắn vào hộp nhựa hoặc túi nilon bảo quản trong tủ lạnh (ngăn bảo quản rau quả).
+\n- Rửa sạch trước khi ăn và chế biến thành có món như salad, xào,…"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hướng dẫn sử dụng app"
+                android:textColor="@color/green"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Khi người dùng mở ứng dụng, nếu chưa đăng nhập, ứng dụng sẽ mở trang đăng nhập đầu tiên, email và mật khẩu bắt buộc phải đúng, nếu chưa có tài khoản sẽ chuyển về trang đăng kí.
+\n- Các thông tin đăng kí yêu cầu email, tên người dùng, mật khẩu và số điện thoại, tên và email không được để trống hoặc trùng khớp với bất kì người dùng nào khác.
+\n- Mật khẩu nhập lại phải giống với mật khẩu ban đầu, số điện thoại và email phải nhập đúng định dạng."
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trang chủ"
+                android:textColor="@color/green"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Hiển thị thông số trạng thái của cảm biến nhiệt độ, độ ẩm không khí và độ ẩm đất theo thời gian thực.
+\n- Sau khi chọn 1 thư viện ở trang thư viện, trang home sẽ hiển thị thêm các thông số giới hạn trong khoảng của mỗi cây, hiển thị tên cây.
+\n- Hiển thị trạng thái bật tắt của các thiết bị, trạng thái chệ độ thủ công, tự động, người dùng có thể bật tắt 4 thiết bị và chuyển đổi chế độ, khi ở chế độ auto, người dùng không thể điều khiển 4 thiết bị nữa và chỉ có thể theo dõi trạng thái của 4 thiết bị đó.
+\n- Nút dừng khẩn cấp, khi chọn sẽ tắt toàn bị thiết bị và sẽ tự động chuyển về chế độ manual."
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thư viện"
+                android:textColor="@color/green"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Hiển thị các thư viện chung và các thư viện được thêm vào bởi người dùng.
+\n- Người dùng có thể chia sẻ thư viện đó cho nhiều người dùng khác có thể xem và áp dụng.
+\n- Người dùng có thể sửa những thư viện do mình thêm vào.
+\n- Người dùng có thể thêm thư viện, tên và cac thông số của thư viện không được để trống.
+\n- Người dùng có thể tìm kiếm thư viện mình muốn theo tên của loại cây.
+\n- Khi người dùng bấm chọn, sẽ tự động chuyển về trang chủ với các thông số của thư viện đó sẽ được hiển thị."
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trang log"
+                android:textColor="@color/green"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Sẽ hiển thị 4 biểu đò, mỗi biểu đồ hiển thị 1 thông số, nhiệt độ, độ ẩm và đổ ẩm đất.
+\n- Mỗi ngày sẽ có 3 log được gửi về bao gồm thông số của 4 cảm biến và thời gian log được gửi.
+\n- Mỗi thông số trong log sẽ được hiển thị lên 1 biểu độ tạo thành 1 biểu đồ đường để người dùng theo dõi tình trạng biến đổi của môi trường trong nhà kính."
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tài khoản"
+                android:textColor="@color/green"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Các trang chính sách bảo mật, quy định sử dụng và điều khoản dịch vụ bao gồm các thông tin, điều khoản và chính sách khi sử dụng ứng dụng.
+\n- Nút đăng xuất.
+\n- Thời tiết hàng ngày sẽ được cập nhật hàng ngày và hiển thị cho người dùng xem ở trang tài khoản."
+                android:textSize="18dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

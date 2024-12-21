@@ -1,0 +1,159 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/bg_up"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/weather_background"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/logo_button_home"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/logo" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/Hello_sen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="17dp"
+            android:text="WELCOME"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/logo_button_home"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:text="to SPC!"
+            android:textColor="@color/yellow"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/Hello_sen"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:paddingLeft="121dp"
+            android:paddingTop="28dp"
+            android:text="SMART PLANT CARE"
+            android:textColor="@color/orange"
+            android:textSize="15dp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên cây"/>
+
+    <EditText
+        android:id="@+id/edt_category_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Category ID"
+        android:inputType="number"
+        android:visibility="gone"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edt_humidity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Độ ẩm giới hạn dưới"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/edt_humidity_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Độ ẩm giới hạn trên"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/edt_temp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhiệt độ giới hạn dưới"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/edt_temp_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhiệt độ giới hạn trên"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/edt_light_off"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Thời gian tắt đèn (ngày)"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/edt_light_on"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Thời gian bật đèn (tiếng)"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/edt_soil_down"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Độ ẩm đất giới hạn dưới"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/edt_soil_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Độ ẩm đất giới hạn trên"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/btn_confirm_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/green"
+        android:text="Thêm"/>
+</LinearLayout>

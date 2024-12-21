@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScollView.DKDV">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/weather_background"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Điều khoản dịch vụ"
+            android:paddingTop="14dp"
+            android:textStyle="bold"
+            android:paddingLeft="70dp"
+            android:textSize="30dp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/DKDV_ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_marginTop="70dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingRight="15dp">
+
+            <!-- Giới thiệu -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Giới thiệu"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:textSize="22dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chào mừng bạn đến với Ứng dụng Giám sát và Điều khiển Tưới tiêu từ xa của chúng tôi (gọi chung là 'Ứng dụng'). Được phát triển bởi công ty PKH, Ứng dụng này cho phép bạn theo dõi thông số môi trường, tình trạng đất đai, và điều khiển hệ thống tưới tiêu từ xa một cách hiệu quả. Chúng tôi cam kết bảo vệ quyền riêng tư và sự an toàn của dữ liệu cá nhân mà bạn cung cấp khi sử dụng Ứng dụng. Vui lòng đọc kỹ các điều khoản và chính sách bảo mật trước khi sử dụng."
+                android:paddingLeft="10dp"
+                android:textSize="18dp"/>
+
+            <!-- Bảo mật -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bảo mật"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:textSize="22dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chúng tôi có thể thu thập dữ liệu cá nhân và dữ liệu cảm biến của bạn khi:
+                    \n- Bạn đăng ký tài khoản và sử dụng Ứng dụng để theo dõi và điều khiển hệ thống tưới tiêu;
+                    \n- Bạn đồng bộ Ứng dụng với các thiết bị cảm biến để giám sát môi trường đất, độ ẩm, nhiệt độ và các yếu tố khác;
+                    \n- Bạn gửi thông tin liên quan đến tình trạng thiết bị và các sự cố gặp phải để hỗ trợ bảo trì hoặc nâng cấp;
+                    \n- Bạn tương tác với chúng tôi qua các kênh hỗ trợ khách hàng như email, cuộc gọi, hoặc ứng dụng trò chuyện trực tiếp."
+                android:paddingLeft="10dp"
+                android:textSize="18dp"/>
+
+            <!-- Giới hạn về quyền sử dụng -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Giới hạn về quyền sử dụng"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:textSize="22dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chúng tôi thu thập các loại dữ liệu sau đây để hỗ trợ bạn trong việc quản lý hệ thống tưới tiêu:
+                    \n- Tên và thông tin tài khoản người dùng;
+                    \n- Vị trí thiết bị và khu vực tưới tiêu;
+                    \n- Thông tin cảm biến về độ ẩm đất, nhiệt độ, độ pH, và các dữ liệu môi trường khác;
+                    \n- Lịch sử hoạt động và tình trạng hệ thống tưới tiêu;
+                    \n- Cài đặt tự động hóa tưới tiêu dựa trên điều kiện thời tiết và dữ liệu cảm biến.
+                    \nNếu bạn muốn hạn chế hoặc ngừng chia sẻ dữ liệu, bạn có thể liên hệ với chúng tôi qua email info@pkhcorp.vn để biết thêm chi tiết về quy trình ngừng sử dụng dịch vụ hoặc thay đổi quyền riêng tư."
+                android:paddingLeft="10dp"
+                android:textSize="18dp"/>
+
+            <!-- Điều khoản bảo mật thêm -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Điều khoản bảo mật bổ sung"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:textSize="22dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dữ liệu cá nhân mà chúng tôi thu thập được sẽ được sử dụng để tối ưu hóa hệ thống tưới tiêu, bao gồm việc điều chỉnh các thông số cảm biến và lịch trình tưới tiêu phù hợp với điều kiện thời tiết và tình trạng cây trồng. Chúng tôi cam kết không chia sẻ dữ liệu của bạn cho bên thứ ba mà không có sự đồng ý của bạn, trừ khi điều đó là cần thiết để đảm bảo chất lượng dịch vụ và an ninh."
+                android:paddingLeft="10dp"
+                android:textSize="18dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

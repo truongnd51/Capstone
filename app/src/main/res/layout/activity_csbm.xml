@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScollView.CSBM">
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/weather_background"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chính sách bảo mật"
+            android:textStyle="bold"
+            android:layout_marginLeft="70dp"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <!-- Scrollable Content Section -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/CSBM_ScrollView"
+        android:layout_marginTop="70dp">
+
+        <!-- Main Content Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp">
+
+            <!-- Section 1: Introduction -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Giới thiệu"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chào mừng bạn đến với phần mềm SPC - Phần mềm theo dõi và điều khiển tưới tiêu tự động và từ xa ."
+                android:paddingTop="8dp"
+                android:textSize="16sp" />
+
+            <!-- Section 2: When Personal Data is Collected -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Khi nào chúng tôi sẽ thu thập dữ liệu cá nhân?"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:paddingTop="16dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chúng tôi sẽ/có thể thu thập dữ liệu cá nhân về bạn khi:\n• Bạn đăng ký và/hoặc sử dụng Các Dịch Vụ hoặc truy cập Phần mềm của chúng tôi."
+                android:paddingTop="8dp"
+                android:textSize="16sp" />
+
+            <!-- Section 3: What Data We Collect -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chúng tôi sẽ thu thập những dữ liệu gì?"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:paddingTop="16dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dữ liệu cá nhân mà chúng tôi có thể thu thập bao gồm, nhưng không giới hạn:\n• Tên;\n• Số điện thoại;\n• Email"
+                android:paddingTop="8dp"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

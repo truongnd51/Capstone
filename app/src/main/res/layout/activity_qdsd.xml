@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScollView.QDSD">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/weather_background"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QUY ĐỊNH SỬ DỤNG"
+            android:textStyle="bold"
+            android:textSize="27dp"
+            android:paddingLeft="70dp"
+            android:paddingTop="14dp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/usage_rule_scroll_view"
+        android:layout_marginTop="70dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mục đích"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:textSize="22dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ứng dụng này hỗ trợ người dùng quản lý hệ thống tưới tiêu tự động cho khu vườn của mình một cách hiệu quả.
+                \nCác tính năng bao gồm: bật/tắt hệ thống tưới từ xa, cài đặt chế độ tưới tự động, và theo dõi các thông số môi trường như độ ẩm, nhiệt độ, và ánh sáng."
+                android:textSize="18dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Điều kiện sử dụng"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:textSize="22dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Người dùng cần đảm bảo các thiết bị kết nối đúng cách và hệ thống điện an toàn khi sử dụng ứng dụng.
+                \nỨng dụng không chịu trách nhiệm cho các vấn đề phát sinh do thiết bị vật lý hoặc kết nối không ổn định."
+                android:textSize="18dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quyền sở hữu"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:textSize="22dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ứng dụng và các dữ liệu thu thập trong quá trình sử dụng thuộc quyền sở hữu của nhà phát triển và được bảo vệ theo luật sở hữu trí tuệ.
+                \nNgười dùng không được phép sao chép hoặc phân phối ứng dụng này khi chưa có sự đồng ý của nhà phát triển."
+                android:textSize="18dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bảo mật và quyền riêng tư"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:textSize="22dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chúng tôi cam kết bảo vệ thông tin cá nhân của người dùng.
+                \nCác thông tin thu thập được sử dụng nhằm mục đích cải thiện chất lượng dịch vụ và không được chia sẻ với bên thứ ba khi chưa có sự đồng ý của bạn."
+                android:textSize="18dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thỏa thuận và từ chối trách nhiệm"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:textSize="22dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Việc sử dụng ứng dụng này đồng nghĩa với việc bạn chấp nhận các điều khoản và điều kiện đã nêu trên.
+                \nNhà phát triển không chịu trách nhiệm cho bất kỳ thiệt hại nào phát sinh từ việc sử dụng ứng dụng ngoài phạm vi cho phép."
+                android:textSize="18dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cập nhật và thay đổi"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:textSize="22dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chúng tôi có quyền cập nhật và thay đổi điều khoản sử dụng mà không cần thông báo trước.
+                \nNgười dùng được khuyến nghị kiểm tra ứng dụng thường xuyên để cập nhật thông tin mới nhất."
+                android:textSize="18dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Liên hệ hỗ trợ"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:textSize="22dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Để báo cáo sự cố hoặc cần hỗ trợ, vui lòng liên hệ qua email support@gardenapp.com."
+                android:textSize="18dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thỏa thuận pháp lý"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:textSize="22dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mọi tranh chấp phát sinh từ việc sử dụng ứng dụng này sẽ được giải quyết theo quy định pháp luật hiện hành của quốc gia."
+                android:textSize="18dp"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

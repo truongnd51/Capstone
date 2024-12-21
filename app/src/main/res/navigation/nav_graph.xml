@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.capstone.ui.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+    </fragment>
+    <fragment
+        android:id="@+id/libraryFragment"
+        android:name="com.example.capstone.ui.LibraryFragment"
+        android:label="fragment_library"
+        tools:layout="@layout/fragment_library">
+        <action
+            android:id="@+id/action_libraryFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/logFragment"
+        android:name="com.example.capstone.ui.LogFragment"
+        android:label="fragment_log"
+        tools:layout="@layout/fragment_log">
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.capstone.ui.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.capstone.ui.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.example.capstone.ui.UserFragment"
+        android:label="fragment_user"
+        tools:layout="@layout/fragment_user">
+        <action
+            android:id="@+id/action_userFragment_to_QDSD"
+            app:destination="@id/QDSD" />
+        <action
+            android:id="@+id/action_userFragment_to_CSBM"
+            app:destination="@id/CSBM" />
+        <action
+            android:id="@+id/action_userFragment_to_DKDV"
+            app:destination="@id/DKDV" />
+        <action
+            android:id="@+id/action_userFragment_to_HDSD"
+            app:destination="@id/HDSD" />
+    </fragment>
+
+    <activity
+        android:id="@+id/CSBM"
+        android:name="com.example.capstone.ScollView.CSBM"
+        android:label="activity_csbm"
+        tools:layout="@layout/activity_csbm" />
+    <activity
+        android:id="@+id/QDSD"
+        android:name="com.example.capstone.ScollView.QDSD"
+        android:label="activity_qdsd"
+        tools:layout="@layout/activity_qdsd" />
+    <activity
+        android:id="@+id/DKDV"
+        android:name="com.example.capstone.ScollView.DKDV"
+        android:label="activity_dkdv"
+        tools:layout="@layout/activity_dkdv" />
+    <activity
+        android:id="@+id/HDSD"
+        android:name="com.example.capstone.ScollView.HDSD"
+        android:label="activity_hdsd"
+        tools:layout="@layout/activity_hdsd" />
+
+</navigation>
